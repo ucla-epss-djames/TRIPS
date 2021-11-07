@@ -7,6 +7,8 @@
   tidal number followed by the harmonic degree. The inputs for the driver method,
   =propagator_method=, will also take the amount of =layers= of the structure
   and a =data= variable which represents the structure of the plaent.
+  - NOTE :: Benchmarks in the *Example* directory need to have their directory paths setup correctly to run
+  - NOTE :: Benchmarks that require a specific data file will not run at the moment, because data files are not copied over yet
 
 * Design
   The file structure of this code is as follows:
