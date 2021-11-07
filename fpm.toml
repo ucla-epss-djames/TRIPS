@@ -1,0 +1,24 @@
+name = "TRIPS"
+author = "David James"
+maintainer = "davidabraham@ucla.edu"
+homepage = "https://da-james.github.io"
+description = "[T]idal [R]esponse [I]n [P]lanetary [S]tructure"
+
+[library]
+source-dir = "src"
+
+[[ executable ]]
+name = "trips"
+source-dir = "app"
+main = "main.f90"
+
+[[ test ]]
+name = "check_tidal"
+source-dir = "test"
+main = "check_tidal.f90"
+
+[build]
+link = ["blas", "lapack"]
+
+[install]
+library = false

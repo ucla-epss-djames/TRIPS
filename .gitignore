@@ -1,0 +1,10 @@
+*.o
+*~
+*.mod
+main
+.ipynb_checkpoints
+*.#
+*genmod.f90
+build
+.DS_Store
+*.Identifier

@@ -1,0 +1,26 @@
+#+TITLE: TRIPS: [T]idal [R]esponse [I]n [P]lanetary [S]tructure
+#+AUTHOR: David James
+
+* Description
+  The TRIPS code will produce the tidal response for the tidal numbers =k, h, l= 
+  for some integer =l= that is the harmoinc degree such that =kl= represents the
+  tidal number followed by the harmonic degree. The inputs for the driver method,
+  =propagator_method=, will also take the amount of =layers= of the structure
+  and a =data= variable which represents the structure of the plaent.
+
+* Design
+  The file structure of this code is as follows:
+  - *README*: description of the source code
+  - *app*: program that will call the source code
+  - *src*: all the modules making up the TRIPS code
+  - *test*: any testing on the src code
+    - inverse method check
+  - *example*: benchmarks from academic papers this code has performed
+    - Gavrilov 97
+    - Spada 08
+    - Vermeersen 96
+    - Helled 11
+    - Helled 13
+    - Stixrude 19
+  - *fpm.toml*: compilation file for Fortran Package Manager
+    - NOTE :: project depends on =BLAS= and =LAPACK=
